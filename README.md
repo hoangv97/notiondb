@@ -6,6 +6,10 @@ Python 3 tools for interacting with Notion API:
 
 - Relational database wrapper
 
+## Changelog
+
+- 11/11: Add column list, column block
+
 ## Installation
 
 `pip install notiondb`

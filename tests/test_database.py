@@ -164,6 +164,10 @@ class TestDatabase(unittest.TestCase):
             TableOfContentsBlock(),
             BreadcrumbBlock(),
             DividerBlock(),
+            ColumnListBlock(columns=[
+                ColumnBlock([ParagraphBlock('paragraph 1'), ParagraphBlock('paragraph 2')]),
+                ColumnBlock([ParagraphBlock('paragraph 3'), ParagraphBlock('paragraph 4')]),
+            ]),
             ParagraphBlock('paragraph 1'),
             ParagraphBlock('paragraph 2', link='https://developers.notion.com/reference/block'),
             HeadingOneBlock('heading 1'),

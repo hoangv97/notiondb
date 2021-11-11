@@ -111,6 +111,28 @@ class CodeBlock(BaseBlock):
         return self._language
 
 
+class ColumnBlock(BaseBlock):
+  
+    def __init__(self, blocks: List[BaseBlock]):
+        super().__init__(value=None)
+        self._children = blocks
+
+    block_type = 'column'
+    
+    properties = ['children']
+
+    def children(self):
+        return [block.value for block in self._children]
+
+
+class ColumnListBlock(ColumnBlock):
+  
+    def __init__(self, columns: List[ColumnBlock]):
+        super().__init__(blocks=columns)
+
+    block_type = 'column_list'
+
+
 class ChildPageBlock(BaseBlock):
   
     block_type = 'child_page'
