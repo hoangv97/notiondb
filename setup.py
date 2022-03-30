@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="notiondb",
-    version="1.0.1",
+    version="1.0.2",
     author="Viet Hoang",
     author_email="ngviethoang0212@gmail.com",
     description="Python 3 tools for interacting with Notion API",

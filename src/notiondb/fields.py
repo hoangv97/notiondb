@@ -131,7 +131,7 @@ class MultiSelectField(SelectField):
 
     @property
     def update_value(self):
-        return [{'name': value for value in self.value}]
+        return [{'name': value} for value in self.value]
 
 
 class DateField(BaseField):
